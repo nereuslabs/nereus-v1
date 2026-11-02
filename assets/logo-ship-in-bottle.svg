@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Nereus 2.0 Pixel Art: Ship in a Bottle -->
+  <defs>
+    <filter id="bottle-glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="14" flood-color="#00f5d4" flood-opacity="0.3"/>
+    </filter>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark Rounded Canvas -->
+  <rect width="512" height="512" rx="108" fill="url(#bg)"/>
+  <rect width="506" height="506" x="3" y="3" rx="105" fill="none" stroke="#1b2537" stroke-width="3"/>
+
+  <!-- 32x32 Pixel Art Grid scaled to 12px per pixel, centered at offset (64, 64) -->
+  <g transform="translate(64, 64)" shape-rendering="crispEdges" filter="url(#bottle-glow)">
+    <!-- Palette:
+         Glass Outer:       #384860
+         Glass Highlight:   #78A0C8 (soft glow)
+         Glass Glint:       #E0F4FF (white sparkle)
+         Cork:              #C68B59 (warm cork wood)
+         Cork Shadow:       #8C5835
+         Water Deep:        #1A3B6B
+         Water Mid:         #0077B6
+         Water Bright:      #00F5D4 (neon seafoam)
+         Ship Hull:         #F39C12 (golden wood)
+         Ship Keel/Shadow:  #A04000
+         Sails:             #FFFFFF
+         Sails Shadow:      #90E0EF
+         Flag/Pendant:      #FF0055 (cyber neon accent)
+    -->
+
+    <!-- ==================== CORK & BOTTLE NECK (LEFT SIDE) ==================== -->
+    <!-- Cork Stopper (x: 24 to 60, y: 168 to 216) -->
+    <rect x="24" y="168" width="24" height="48" fill="#C68B59"/>
+    <rect x="24" y="192" width="24" height="24" fill="#8C5835"/>
+
+    <!-- Bottle Lip & Neck Ring -->
+    <rect x="48" y="156" width="12" height="72" fill="#78A0C8"/>
+    <rect x="48" y="168" width="12" height="48" fill="#E0F4FF"/>
+
+    <!-- Neck Cylinder -->
+    <rect x="60" y="168" width="36" height="12" fill="#384860"/>
+    <rect x="60" y="180" width="36" height="24" fill="#1B2537" opacity="0.6"/>
+    <rect x="60" y="204" width="36" height="12" fill="#384860"/>
+
+    <!-- Neck to Body Expansion -->
+    <rect x="96" y="144" width="24" height="24" fill="#384860"/>
+    <rect x="96" y="216" width="24" height="24" fill="#384860"/>
+
+    <!-- ==================== BOTTLE GLASS MAIN BODY ==================== -->
+    <!-- Top Glass Wall -->
+    <rect x="120" y="120" width="204" height="12" fill="#384860"/>
+    <rect x="132" y="132" width="180" height="12" fill="#78A0C8"/>
+    <rect x="144" y="132" width="72" height="12" fill="#E0F4FF"/> <!-- Glint -->
+
+    <!-- Right Glass Wall (Base of Bottle) -->
+    <rect x="324" y="132" width="24" height="24" fill="#384860"/>
+    <rect x="348" y="156" width="12" height="72" fill="#384860"/>
+    <rect x="336" y="168" width="12" height="48" fill="#78A0C8"/>
+    <rect x="324" y="228" width="24" height="24" fill="#384860"/>
+
+    <!-- Bottom Glass Wall -->
+    <rect x="120" y="252" width="204" height="12" fill="#384860"/>
+    <rect x="132" y="240" width="180" height="12" fill="#1B2537"/>
+
+    <!-- ==================== WATER INSIDE BOTTLE ==================== -->
+    <!-- Deep Water Base -->
+    <rect x="120" y="216" width="204" height="24" fill="#1A3B6B"/>
+    <!-- Mid Water Layer -->
+    <rect x="120" y="204" width="204" height="12" fill="#0077B6"/>
+    <!-- Cresting Seafoam Waves Inside -->
+    <rect x="120" y="192" width="24" height="12" fill="#00F5D4"/>
+    <rect x="168" y="192" width="36" height="12" fill="#00F5D4"/>
+    <rect x="240" y="192" width="48" height="12" fill="#00F5D4"/>
+    <rect x="300" y="192" width="24" height="12" fill="#00F5D4"/>
+
+    <!-- ==================== THE LITTLE PIXEL SHIP ==================== -->
+    <!-- Ship Hull -->
+    <rect x="180" y="192" width="60" height="12" fill="#F39C12"/>
+    <rect x="168" y="180" width="84" height="12" fill="#F39C12"/>
+    <rect x="168" y="192" width="12" height="12" fill="#A04000"/> <!-- Stern Shadow -->
+    <rect x="240" y="180" width="12" height="12" fill="#A04000"/> <!-- Bow -->
+    <rect x="252" y="180" width="12" height="6" fill="#F39C12"/>  <!-- Bowsprit tip -->
+
+    <!-- Main Mast (Center) -->
+    <rect x="204" y="132" width="6" height="48" fill="#8C5835"/>
+    <!-- Main Sails (Square Rigged) -->
+    <rect x="198" y="138" width="24" height="18" fill="#FFFFFF"/>
+    <rect x="198" y="156" width="24" height="6" fill="#90E0EF"/> <!-- Sail shadow -->
+    <rect x="192" y="162" width="30" height="18" fill="#FFFFFF"/>
+    <rect x="192" y="174" width="30" height="6" fill="#90E0EF"/>
+
+    <!-- Fore Mast (Right / Bow) -->
+    <rect x="228" y="144" width="6" height="36" fill="#8C5835"/>
+    <!-- Fore Sails (Jib & Foresail) -->
+    <rect x="228" y="150" width="18" height="24" fill="#FFFFFF"/>
+    <rect x="234" y="168" width="12" height="6" fill="#90E0EF"/>
+
+    <!-- Cyber Red Mast Flag (Blowing in the wind) -->
+    <rect x="210" y="132" width="12" height="6" fill="#FF0055"/>
+
+    <!-- ==================== MAGIC / SANDBOX PARTICLES ==================== -->
+    <!-- Tiny digital code stars floating inside the bottle -->
+    <rect x="144" y="156" width="6" height="6" fill="#00F5D4"/>
+    <rect x="282" y="144" width="6" height="6" fill="#00F5D4"/>
+    <rect x="264" y="162" width="6" height="6" fill="#FFFFFF"/>
+    <rect x="162" y="144" width="6" height="6" fill="#90E0EF"/>
+
+    <!-- Diagonal Glass Glint Reflection Lines Across Bottle -->
+    <rect x="156" y="144" width="12" height="12" fill="#FFFFFF" opacity="0.7"/>
+    <rect x="168" y="156" width="12" height="12" fill="#FFFFFF" opacity="0.7"/>
+    <rect x="276" y="216" width="12" height="12" fill="#FFFFFF" opacity="0.4"/>
+    <rect x="288" y="228" width="12" height="12" fill="#FFFFFF" opacity="0.4"/>
+  </g>
+</svg>

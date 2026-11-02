@@ -1,5 +1,13 @@
 # Nereus
 
+> [!IMPORTANT]
+> ### 🚨 Nereus 1.x (Python Prototype) is Archived — Welcome to Nereus 2.0!
+> This repository preserves the original Python / LangGraph implementation of Nereus (v1.0 – v1.1).
+> 
+> We are starting a brand new era: **Nereus 2.0 is being built from the ground up in Rust under the permissive MIT License**, featuring an interactive terminal cockpit (TUI), rigorous Socratic AI mentorship, and sandboxed code verification.
+> 
+> 🦀 **Check out Nereus 2.0**: [github.com/nereuslabs/nereus](https://github.com/nereuslabs/nereus) (or our [organization page](https://github.com/nereuslabs))
+
 AI‑tutor по принципу автоматизированного учебного процесса — от **Roadmap** до
 **уверенных практических навыков**: собирает профиль, строит дорожную карту,
 выдаёт материалы и задания, проверяет ответы и адаптирует план под слабые зоны.
