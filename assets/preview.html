@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nereus 2.0 - Logo Explorations</title>
+  <style>
+    :root {
+      --bg: #090d16;
+      --card-bg: #111726;
+      --border: #1e293b;
+      --text: #f1f5f9;
+      --text-dim: #94a3b8;
+      --accent: #00f5d4;
+      --accent-blue: #00bbf9;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      padding: 40px 20px;
+      line-height: 1.6;
+    }
+    .header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 50px;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      background: linear-gradient(135deg, #ffffff, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 12px;
+    }
+    .header p {
+      font-size: 1.1rem;
+      color: var(--text-dim);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+    .preview-box {
+      background: #050811;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 240px;
+      margin-bottom: 20px;
+    }
+    .preview-box img {
+      width: 180px;
+      height: 180px;
+      image-rendering: pixelated;
+    }
+    .card h2 {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .tag {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      background: rgba(0, 245, 212, 0.12);
+      color: var(--accent);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-weight: 600;
+    }
+    .desc {
+      color: var(--text-dim);
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+    .symbolism {
+      background: rgba(255, 255, 255, 0.03);
+      border-left: 3px solid var(--accent-blue);
+      padding: 10px 14px;
+      border-radius: 0 8px 8px 0;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>🌊 Nereus 2.0 Logo Explorations</h1>
+    <p>Fresh, minimalistic, pixel-art emblems designed for terminal cockpits (TUI) and modern open-source branding.</p>
+  </div>
+
+  <div class="grid">
+    <!-- Variant 1: Ship in a Bottle -->
+    <div class="card">
+      <div class="preview-box">
+        <img src="logo-ship-in-bottle.svg" alt="Ship in a Bottle">
+      </div>
+      <h2>🍾 Ship in a Bottle <span class="tag">Top Pick</span></h2>
+      <p class="desc">A miniature schooner sailing on neon cyan waves inside an enclosed glass bottle with digital sparkle stars.</p>
+      <div class="symbolism">
+        <strong>Symbolism:</strong> The hermetic code sandbox (Docker/WASM), precision engineering, and safe self-contained exploration.
+      </div>
+    </div>
+
+    <!-- Variant 2: Cyber Trident -->
+    <div class="card">
+      <div class="preview-box">
+        <img src="logo.svg" alt="Cyber Trident">
+      </div>
+      <h2>🔱 Cyber Trident <span class="tag">Iconic</span></h2>
+      <p class="desc">A glowing neon trident crowned by a beacon star, rising decisively from layered geometric waves.</p>
+      <div class="symbolism">
+        <strong>Symbolism:</strong> Nereus (Greek sea god), speed, authority, and pristine clarity at tiny favicon/TUI scales.
+      </div>
+    </div>
+
+    <!-- Variant 3: Compass Helm -->
+    <div class="card">
+      <div class="preview-box">
+        <img src="logo-compass-helm.svg" alt="Compass Helm">
+      </div>
+      <h2>🧭 Compass Helm <span class="tag">Navigation</span></h2>
+      <p class="desc">A ship's captain wheel fused with an astrolabe compass and a glowing terminal cursor (<code>&gt;</code>) at its core.</p>
+      <div class="symbolism">
+        <strong>Symbolism:</strong> Roadmap creation, steering learners through unknown waters, CLI mastery.
+      </div>
+    </div>
+
+    <!-- Variant 4: Abyssal Lighthouse -->
+    <div class="card">
+      <div class="preview-box">
+        <img src="logo-lighthouse.svg" alt="Lighthouse">
+      </div>
+      <h2>🗼 Socratic Lighthouse <span class="tag">Guidance</span></h2>
+      <p class="desc">A pixel lighthouse on a rugged cliff projecting an intense laser beam through the foggy, dark ocean.</p>
+      <div class="symbolism">
+        <strong>Symbolism:</strong> Illuminating obscure compiler errors and difficult programming concepts through Socratic clarity.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
